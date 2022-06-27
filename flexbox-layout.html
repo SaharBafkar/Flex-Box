@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-5-flexbox</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav ul{
+            display: flex;
+            height: 60px;
+            align-items: center;
+        }
+        nav ul li{
+            margin-right: 15px;
+            font-size: 16px;
+        }
+.gray{
+    background-color: gray;
+}
+.img-res{
+    width: 100%;
+    height: auto;
+}
+header{
+    display: flex;
+    position: relative;
+    background-color: rgb(16, 47, 141);
+    max-height: 700px;
+}
+header img{
+    width: 100%;
+    height: auto;
+}
+header h1{
+    position: absolute;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-right: 30px;
+}
+.container{
+    display:flex;
+    max-width: 1200px;
+    /* height: 300px; */
+    background-color: darkgray;
+    margin: 50px auto;
+}
+.container aside{
+    flex: 25%;
+}
+.container main{
+    flex: 75%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: aqua;
+}
+.purple{
+    background-color: purple;
+}
+.container main>div{
+    width: 46%;
+    /* flex-basis: 400px; */
+    align-self: center;
+    /* margin: 0 16px; */
+    padding: 0 15px;
+    text-align: center;
+    font-size: 16px;
+}
+.container main div p{
+    font-size: 16px;
+}
+aside > div{
+    background-color: #efefef;
+    padding: 15px;
+}
+aside > div >p{
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+@media screen and (max-width: 978px){
+    .container{
+        flex-direction: column;
+    }
+    .container main >div{
+        width: 100%;
+        flex: 100%;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <nav class="gray">
+        <ul>
+            <li><a href="">خانه</a></li>
+            <li><a href="">دوره های آموزشی</a></li>
+            <li><a href="">تماس با ما</a></li>
+            <li><a href="">درباره ما </a></li>
+            
+        </ul>
+    </nav>
+    <header>
+        <h1>کسب مهارت و شروع تجربه های تازه</h1>
+        <img src="/img/h1.jpg" alt="">
+    </header>
+   <section class="container">
+    <aside >
+        <div>
+        <p>جدیدترین مطالب</p>
+        <ul>
+            <li><a href="">مطلب یک</a></li>
+            <li><a href="">مطلب دو</a></li>
+            <li><a href="">مطلب سه</a></li>
+            <li><a href="">مطلب چهار</a></li>
+            <li><a href="">مطلب پنج</a></li>
+        </ul>
+        </div>
+        <div>
+            <p>جدیدترین محصولات</p>
+            <ul>
+                <li><a href="">مطلب یک</a></li>
+                <li><a href="">مطلب دو</a></li>
+                <li><a href="">مطلب سه</a></li>
+                <li><a href="">مطلب چهار</a></li>
+                <li><a href="">مطلب پنج</a></li>
+            </ul>
+            </div>
+    </aside>
+    <main class="blue">
+        <div>
+            <img class="img-res" src="/img/1.png" alt="">
+            <p>دوره طراحی SEO</p>
+        </div>
+        <div>
+            <img class="img-res" src="/img/1.png" alt="">
+            <p>دوره طراحی SEO</p>
+        </div>
+        <div>
+            <img class="img-res" src="/img/1.png" alt="">
+            <p>دوره طراحی SEO</p>
+        </div>
+        <div>
+            <img class="img-res" src="/img/1.png" alt="">
+            <p>دوره طراحی SEO</p>
+        </div>
+        <div>
+            <img class="img-res" src="/img/1.png" alt="">
+            <p>دوره طراحی SEO</p>
+        </div>
+        <div>
+            <img class="img-res" src="/img/1.png" alt="">
+            <p>دوره طراحی SEO</p>
+        </div>
+    </main>
+   </section>
+   <footer class="purple">
+       <p>تمامی حقوق محفوظ می باشد</p>
+   </footer>
+</body>
+
+
+</html>
